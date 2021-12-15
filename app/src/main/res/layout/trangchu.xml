@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0066FF	"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logoboyte" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:text="HỆ THỐNG KHAI BÁO Y TẾ"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_below="@+id/linear1"
+
+        android:layout_weight="0.8">
+
+        <EditText
+            android:id="@+id/edit_timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+
+            android:hint="Tìm kiếm" />
+
+        <ImageButton
+            android:id="@+id/btn_timkiem_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="17dp"
+            android:background="@color/white"
+            android:src="@drawable/iconseach" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="591dp"
+        android:layout_below="@+id/timkiem"
+        android:layout_marginTop="3dp" />
+
+
+</RelativeLayout>
