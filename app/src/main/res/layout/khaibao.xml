@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text="Thông tin khai báo y tế toàn dân"
                 android:textSize="23dp"
-                android:textColor="@color/black"
+                android:textColor="@color/purple_700"
                 android:layout_marginTop="8dp"/>
         </LinearLayout>
         <LinearLayout
