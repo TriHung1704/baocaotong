@@ -20,6 +20,7 @@ public class DangNhap extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DangNhap.this, TrangChu.class);
                 startActivity(intent);
+                //hello
             }
         });
 
