@@ -9,36 +9,47 @@
     <RelativeLayout
         android:id="@+id/top_layout_dangnhap"
         android:layout_width="match_parent"
-        android:layout_height="149dp"
-        android:background="@color/white">
+        android:layout_height="200dp"
 
-        <ImageView
-            android:id="@+id/image_anhlogo_top_dangnhap"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="39dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="221dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/logoboyte" />
+        android:background="#0066FF"
 
-        <ImageView
-            android:id="@+id/logo_btt"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="211dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/btt" />
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_anhlogo_top_dangnhap"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"
+
+                android:src="@drawable/logoboyte" />
+
+            <ImageView
+                android:id="@+id/logoyte"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/img" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HỆ THỐNG KHAI BÁO Y TẾ"
+
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:textColor="@color/white"/>
+
 
     </RelativeLayout>
 
@@ -99,34 +110,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="120dp"
         android:layout_marginTop="200dp"
+        android:gravity="center"
         >
 
-        <Button
+        <ImageView
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/boder_5"
-            android:text="Đăng nhập"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/btn_center_dangki_danhnhap"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/boder_5"
-            android:backgroundTint="#F3F3D0"
-            android:text="Đăng ký"
-            android:textAllCaps="false"
-            android:textSize="20dp" />
+            android:layout_marginTop="70dp"
+
+            android:src="@drawable/img_2"
+             />
+
 
 
     </RelativeLayout>

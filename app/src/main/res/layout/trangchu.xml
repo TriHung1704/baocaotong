@@ -15,10 +15,11 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="94dp"
-            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/logoboyte" />
+            app:srcCompat="@drawable/logoboyte"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/textView3"
@@ -46,10 +47,14 @@
             android:id="@+id/edit_timkiem"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:layout_alignEnd="@+id/btn_timkiem_home"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
             android:layout_marginRight="20dp"
-
+            android:background="#FDFDFD"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#F1F5F6"
             android:hint="Tìm kiếm" />
 
         <ImageButton

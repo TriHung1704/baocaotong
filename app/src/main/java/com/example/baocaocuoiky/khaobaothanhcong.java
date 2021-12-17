@@ -2,23 +2,13 @@ package com.example.baocaocuoiky;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-public class DangNhap extends AppCompatActivity {
-
+public class khaobaothanhcong extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dangnhap);
-
-
-
-
-
-
+        setContentView(R.layout.activity_khaobaothanhcong);
     }
 }

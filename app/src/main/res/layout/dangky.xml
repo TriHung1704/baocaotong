@@ -6,38 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linear1"
+    <RelativeLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#0066FF	"
-        android:orientation="horizontal">
+        android:layout_height="200dp"
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="94dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/logoboyte" />
+        android:background="#0066FF"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_anhlogo_top_dangnhap"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"
+
+                android:src="@drawable/logoboyte" />
+
+            <ImageView
+                android:id="@+id/logoyte"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/img" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="1"
             android:text="HỆ THỐNG KHAI BÁO Y TẾ"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linear1"
+        android:layout_below="@+id/top"
         android:layout_marginTop="0dp">
 
         <LinearLayout
@@ -45,8 +66,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linear1"
-            android:layout_marginTop="2dp"
-            android:orientation="vertical">
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <TextView
                 android:id="@+id/hoten"
@@ -207,6 +230,7 @@
 
             <Button
                 android:id="@+id/opt"
+                android:backgroundTint="@color/purple_700"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear2"
@@ -215,7 +239,8 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="Gửi mã OPT"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
         </LinearLayout>
     </ScrollView>
 
