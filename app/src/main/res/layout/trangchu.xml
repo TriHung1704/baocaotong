@@ -69,7 +69,8 @@
             android:layout_marginRight="20dp"
             android:background="#FDFDFD"
             android:backgroundTint="#F1F5F6"
-            android:hint="Tìm kiếm" />
+            android:hint="Tìm kiếm"
+            android:textStyle="bold"/>
 
         <ImageButton
             android:id="@+id/btn_timkiem_home"
