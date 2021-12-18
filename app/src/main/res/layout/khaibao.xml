@@ -305,15 +305,13 @@
                 android:id="@+id/btguitt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_alignParentStart="true"
-
                 android:layout_marginTop="7dp"
                 android:backgroundTint="@color/purple_700"
                 android:gravity="center"
                 android:text="GỬI THÔNG TIN KHAI BÁO"
                 android:textSize="20dp"
-
+                android:textColor="@color/white"
                 />
 
 

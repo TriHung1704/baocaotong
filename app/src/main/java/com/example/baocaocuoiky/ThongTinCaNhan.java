@@ -16,7 +16,7 @@ public class ThongTinCaNhan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.thongtincanhan);
+        setContentView(R.layout.activity_canhan);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
 
 
