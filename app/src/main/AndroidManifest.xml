@@ -38,6 +38,9 @@
             android:name=".khaibaothanhcong"
             android:exported="true"/>
         <activity
+            android:name=".KhaiBao"
+            android:exported="true"/>
+        <activity
             android:name=".Home"
             android:exported="true">
             <intent-filter>
