@@ -54,7 +54,9 @@
         android:layout_height="0px"
         android:layout_weight="7.2"
         android:layout_below="@+id/linear1"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
 
         <LinearLayout
             android:id="@+id/linear2"
@@ -69,6 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Họ và tên"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <EditText
@@ -86,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ngày/Tháng/Năm sinh"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <EditText
@@ -102,6 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Giới Tính *"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <LinearLayout
@@ -110,12 +115,13 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Nam"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:theme="@style/colored_checkbox"/>
 
                 <CheckBox
                     android:id="@+id/checkBox2"
@@ -123,7 +129,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Nữ"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:theme="@style/colored_checkbox"/>
             </LinearLayout>
 
             <TextView
@@ -219,7 +226,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tôi cam kết các thông tin khai báo là đúng sự thật"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:checked="true"
+                android:theme="@style/colored_checkbox"/>
 
             <Button
                 android:id="@+id/opt"

@@ -28,10 +28,13 @@ public class TrangChu extends AppCompatActivity {
                         startActivity(trangchu);
                         break;
                     case R.id.navigation_khaibao:
-                        Intent giohang = new Intent(TrangChu.this,KhaiBao.class);
-                        startActivity(giohang);
+                        Intent khaibao = new Intent(TrangChu.this,KhaiBao.class);
+                        startActivity(khaibao);
                         break;
-
+                    case R.id.navigation_chat:
+                        Intent chat = new Intent(TrangChu.this,TuVan.class);
+                        startActivity(chat);
+                        break;
                     case R.id.navigation_user:
                         Intent thongbao = new Intent(TrangChu.this,ThongTinCaNhan.class);
                         startActivity(thongbao);
