@@ -56,7 +56,7 @@
         android:layout_below="@+id/linear1"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        >
+       >
 
         <LinearLayout
             android:id="@+id/linear2"
@@ -71,7 +71,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Họ và tên"
-                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <EditText
@@ -89,7 +88,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ngày/Tháng/Năm sinh"
-                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <EditText
@@ -106,7 +104,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Giới Tính *"
-                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <LinearLayout

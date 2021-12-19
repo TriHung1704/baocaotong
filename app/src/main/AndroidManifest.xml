@@ -17,9 +17,6 @@
             android:name=".khaibaothanhcong"
             android:exported="true"/>
         <activity
-            android:name=".TuVan"
-            android:exported="true"/>
-        <activity
             android:name=".DangNhap"
             android:exported="true"/>
         <activity
