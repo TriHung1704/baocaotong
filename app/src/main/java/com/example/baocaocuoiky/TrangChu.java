@@ -16,7 +16,7 @@ public class TrangChu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trangchu);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
-
+        bt.setSelectedItemId(R.id.navigation_home);
 
         bt.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override

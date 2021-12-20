@@ -20,7 +20,7 @@ public class KhaoSatbenh extends AppCompatActivity {
         setContentView(R.layout.khaibao);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
         bt_quit = findViewById(R.id.btguitt);
-
+        bt.setSelectedItemId(R.id.navigation_khaibao);
         bt_quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +39,13 @@ public class KhaoSatbenh extends AppCompatActivity {
                         startActivity(trangchu);
                         break;
                     case R.id.navigation_khaibao:
-                        Intent giohang = new Intent(KhaoSatbenh.this,KhaoSatbenh.class);
+                        Intent giohang = new Intent(KhaoSatbenh.this,KhaiBao.class);
                         startActivity(giohang);
+                        break;
+
+                    case R.id.navigation_chat:
+                        Intent chat = new Intent(KhaoSatbenh.this,TuVan.class);
+                        startActivity(chat);
                         break;
 
                     case R.id.navigation_user:

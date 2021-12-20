@@ -18,7 +18,7 @@ public class ThongTinCaNhan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canhan);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
-
+        bt.setSelectedItemId(R.id.navigation_user);
 
         bt.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -30,8 +30,13 @@ public class ThongTinCaNhan extends AppCompatActivity {
                         startActivity(trangchu);
                         break;
                     case R.id.navigation_khaibao:
-                        Intent giohang = new Intent(ThongTinCaNhan.this,KhaoSatbenh.class);
+                        Intent giohang = new Intent(ThongTinCaNhan.this,KhaiBao.class);
                         startActivity(giohang);
+                        break;
+
+                    case R.id.navigation_chat:
+                        Intent chat = new Intent(ThongTinCaNhan.this,TuVan.class);
+                        startActivity(chat);
                         break;
 
                     case R.id.navigation_user:

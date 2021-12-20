@@ -19,7 +19,7 @@ public class KhaiBao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thongtincanhan);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
-
+        bt.setSelectedItemId(R.id.navigation_khaibao);
         bt_tieptuc = findViewById(R.id.tieptuc);
 
         bt_tieptuc.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +41,11 @@ public class KhaiBao extends AppCompatActivity {
                     case R.id.navigation_khaibao:
                         Intent giohang = new Intent(KhaiBao.this,KhaiBao.class);
                         startActivity(giohang);
+                        break;
+
+                    case R.id.navigation_chat:
+                        Intent chat = new Intent(KhaiBao.this,TuVan.class);
+                        startActivity(chat);
                         break;
 
                     case R.id.navigation_user:
