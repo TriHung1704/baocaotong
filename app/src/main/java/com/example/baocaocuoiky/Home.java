@@ -18,7 +18,7 @@ public class Home extends AppCompatActivity {
         btn_dky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent  intent = new Intent(Home.this, DangKy.class);
+                Intent  intent = new Intent(Home.this, SignUp.class);
                 startActivity(intent);
             }
         });

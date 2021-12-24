@@ -177,15 +177,68 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="15"
-                    android:hint="Nhập Ngày Sinh:"
+                    android:hint="Ngày/Tháng/Năm (VD 17/04/2001)"
                     android:inputType="text"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:id="@+id/gioitinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giới Tính *"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/group_gt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="7">
+                        <RadioButton
+                            android:id="@+id/gtnam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nam"
+                            android:textSize="20dp" />
+                        <RadioButton
+                            android:id="@+id/gtnu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nữ"
+                            android:layout_marginLeft="70dp"
+                            android:textSize="20dp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvcmnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số CMT/CCCD/Hộ chiếu"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cmnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp" />
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -195,84 +248,72 @@
                     android:textColor="@color/black"
                     android:textSize="25dp" />
 
-
                 <EditText
-                    android:id="@+id/diachihuyen"
+                    android:id="@+id/tinh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập  Huyện:"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="Tính/Thành Phố"
+                    android:inputType="textPersonName"
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/diachixa"
+                    android:id="@+id/huyen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập Xã:"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="Quận/Huyện"
+                    android:inputType="textPersonName"
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/tinhthanh"
+                    android:id="@+id/xa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập Tỉnh Thành:"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="Phường/Xã"
+                    android:inputType="textPersonName"
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/diachicuthe"
+                    android:id="@+id/sonha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập Địa chỉ cụ thể:"
-                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="Số nhà, Đường, ..."
+                    android:inputType="textPersonName"
                     android:textSize="20dp" />
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Số điện thoại"
-                    android:textColor="@color/black"
-                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/sdt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập số điện thoại:"
+                    android:ems="5"
+                    android:hint="Số điện thoại:"
                     android:inputType="text"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Email"
-                    android:textColor="@color/black"
-                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="15"
-                    android:hint="Nhập Email:"
-                    android:inputType="text"
-                    android:textSize="20dp" />
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp"
+                    android:hint="Nhập Email:"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tôi cam kết các thông tin khai báo là đúng sự thật"
+                    android:textSize="20dp"
+                    android:checked="true"
+                    android:theme="@style/colored_checkbox"/>
+
             </LinearLayout>
             <Button
                 android:id="@+id/tieptuc"

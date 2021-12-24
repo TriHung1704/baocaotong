@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,22 +16,27 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class KhaiBao extends AppCompatActivity {
-    Button bt_tieptuc;
+    private EditText edquoctich,edhoten,edngaysinh,edemail,edsdt;
+    private Button  bttieptuc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thongtincanhan);
         BottomNavigationView bt  = findViewById(R.id.botton_navigation);
         bt.setSelectedItemId(R.id.navigation_khaibao);
-        bt_tieptuc = findViewById(R.id.tieptuc);
-
-        bt_tieptuc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(KhaiBao.this, KhaoSatbenh.class);
-                startActivity(intent);
-            }
+        bttieptuc = findViewById(R.id.tieptuc);
+        edquoctich = findViewById(R.id.quoctich);
+        edhoten = findViewById(R.id.hoten);
+        edngaysinh = findViewById(R.id.ngaysinh);
+        edemail = findViewById(R.id.email);
+        edsdt = findViewById(R.id.sdt);
+        bttieptuc= findViewById(R.id.tieptuc);
+        bttieptuc.setOnClickListener((view )->  {
+            processinsert(edquoctich.getText().toString(),edhoten.getText().toString(),edngaysinh.getText().toString(),edsdt.getText().toString(),edemail.getText().toString());
+            startActivity(new Intent(KhaiBao.this,KhaoSatbenh.class));
+            finish();
         });
+
         bt.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -59,5 +67,20 @@ public class KhaiBao extends AppCompatActivity {
             }
         });
 
-    };
+
+    }
+    private void processinsert(String qt, String ht, String ns, String sdt, String e) {
+        String res= new ThongtinDatabase(this ).addrecode(qt,ht,ns,sdt,e);
+        edquoctich.setText("");
+        edhoten.setText("");
+        edngaysinh.setText("");
+        edsdt.setText("");
+        edemail.setText("");
+        Toast.makeText(getApplicationContext(),res,Toast.LENGTH_SHORT).show();
+
+
+    }
+
+    ;
 }
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#87E0EC"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Họ Tên"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvqt"
+            android:layout_below="@+id/tvht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Quốc Tịch"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Ngày Sinh"
+                android:layout_below="@+id/tvqt"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvsdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvns"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Số điện thoại"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/tvsdt"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+</LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="10"
-    tools:context=".MainActivity"
+    tools:context=".Home"
     android:orientation="vertical">
 
     <LinearLayout
@@ -55,7 +55,7 @@
         android:layout_weight="7"
         android:layout_below="@+id/top_layout_dangnhap"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-3dp"
+        android:layout_marginStart="0dp"
         >
 
         <ImageView
@@ -71,24 +71,13 @@
             android:id="@+id/user_dangnhap"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginStart="30dp"
             android:layout_below="@+id/anh"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
             android:background="@drawable/boder_3"
             android:hint="Phone number" />
 
-        <EditText
-            android:id="@+id/password_dangnhap"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/user_dangnhap"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="537dp"
-            android:background="@drawable/boder_3"
-            android:hint="Password" />
 
         <Button
             android:id="@+id/dangnhap"
@@ -96,7 +85,7 @@
             android:layout_height="60dp"
             android:layout_below="@id/foget_pass"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="29dp"
             android:layout_marginEnd="60dp"
             android:layout_marginBottom="49dp"
             android:background="@drawable/boder_5"
@@ -110,12 +99,25 @@
             android:id="@+id/foget_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/password_dangnhap"
+            android:layout_below="@+id/password"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="59dp"
-            android:layout_marginBottom="-35dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginTop="20dp"
             android:text="Bạn đã quên mật khẩu?"
             android:textSize="15dp" />
 
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/user_dangnhap"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:background="@drawable/boder_3"
+            android:hint="Nhập Password:"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
     </RelativeLayout>
 </LinearLayout>
