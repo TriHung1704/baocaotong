@@ -15,29 +15,34 @@
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13651315789473684" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/item.xml" value="0.13914473684210527" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/messager.xml" value="0.13651315789473684" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/search.xml" value="0.12708333333333333" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/user.xml" value="0.13914473684210527" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/drawable/user_1.xml" value="0.13914473684210527" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.12894736842105264" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_bottom_navigatione.xml" value="0.12894736842105264" />
-        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_canhan.xml" value="0.2" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_canhan.xml" value="0.16" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_home.xml" value="0.15" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_khaibaothanhcong.xml" value="0.1" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_sign_up.xml" value="0.12894736842105264" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/activity_thongtin.xml" value="0.18" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/bacsituvan.xml" value="0.2" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/dangky.xml" value="0.12631578947368421" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/dangnhap.xml" value="0.14" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/fragment_dashboard.xml" value="0.12894736842105264" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/fragment_home.xml" value="0.12894736842105264" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/fragment_notifications.xml" value="0.12894736842105264" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/item_thongtin.xml" value="0.12894736842105264" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/khaibao.xml" value="0.2" />
-        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/singlerow.xml" value="0.15" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/recyclerview.xml" value="0.12894736842105264" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/singlerow.xml" value="0.18" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/thanhcong.xml" value="0.1" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/thongtincanhan.xml" value="0.15" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/thongtinyeuto.xml" value="0.11940298507462686" />
-        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/trangchu.xml" value="0.14" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/trangchu.xml" value="0.25" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/layout/xacthuc.xml" value="0.12" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.12631578947368421" />
+        <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/menu/search.xml" value="0.12894736842105264" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13914473684210527" />
         <entry key="..\:/BaoCaoCuoiKy/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13914473684210527" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/BaoCaoCuoiKy/app/src/main/res/drawable-v24/boder_5.xml" value="0.1361842105263158" />

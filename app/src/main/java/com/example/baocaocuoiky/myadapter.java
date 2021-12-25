@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
 {
     ArrayList <model> dataholder;
+    private model model;
 
     public myadapter(ArrayList<model> dataholder) {
         this.dataholder = dataholder;
@@ -54,4 +55,9 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
 
         }
     }
+    public void filterList(ArrayList<model> filterList, model user1){
+        dataholder = filterList;
+        model = user1;
+        notifyDataSetChanged();
+    };
 }

@@ -28,7 +28,16 @@ public class SignUp extends AppCompatActivity {
         btndangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean var= myDB.registerUser(usernamedk.getText().toString(),emaildk.getText().toString(),passworddk.getText().toString());
+                boolean var = false;
+
+                if(CheckNull.isNotNull(usernamedk.getText().toString(),emaildk.getText().toString(),passworddk.getText().toString())){
+                    var = myDB.registerUser(usernamedk.getText().toString(),emaildk.getText().toString(),passworddk.getText().toString());
+
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Hãy nhập đầy đủ các dòng thông tin", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if(var){
                     Toast.makeText(SignUp.this, "Đăng kí thành công!!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUp.this, Home.class));

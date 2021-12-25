@@ -36,7 +36,14 @@ public class DangNhap extends AppCompatActivity {
         bt_dn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean var = myDb.checkUser(username_login.getText().toString(),password_login.getText().toString());
+                boolean var = false;
+                if(CheckNull.isNotNull(username_login.getText().toString(),password_login.getText().toString())){
+                    var = myDb.checkUser(username_login.getText().toString(),password_login.getText().toString());
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Hãy nhập đầy đủ các dòng thông tin", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if(var){
                     Toast.makeText(DangNhap.this, "Đăng nhập thành công!!!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(DangNhap.this,TrangChu.class));
@@ -48,6 +55,7 @@ public class DangNhap extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 }

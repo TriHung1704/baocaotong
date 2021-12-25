@@ -49,39 +49,7 @@
     </LinearLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/timkiem"
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_below="@+id/linear1"
 
-        android:layout_weight="0.8">
-
-        <EditText
-            android:id="@+id/edit_timkiem"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignEnd="@+id/btn_timkiem_home"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginRight="20dp"
-            android:background="#FDFDFD"
-            android:backgroundTint="#F1F5F6"
-            android:hint="Tìm kiếm"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/btn_timkiem_home"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="335dp"
-            android:layout_marginTop="17dp"
-            android:background="@color/white"
-            android:src="@drawable/search" />
-
-    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/web"
         android:layout_width="match_parent"
@@ -110,13 +78,14 @@
             android:textColor="#0066FF"
             android:textSize="20dp" />
     </RelativeLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recview"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5.4">
+<ImageView
+    android:id="@+id/solieu"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="6.2"
+    app:srcCompat="@drawable/anhslieu"
+    />
 
-    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/botton_navigation"
@@ -133,4 +102,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
 </LinearLayout>

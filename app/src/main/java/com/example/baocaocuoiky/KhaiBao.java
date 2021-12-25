@@ -32,11 +32,21 @@ public class KhaiBao extends AppCompatActivity {
         edsdt = findViewById(R.id.sdt);
         bttieptuc= findViewById(R.id.tieptuc);
         bttieptuc.setOnClickListener((view )->  {
-            processinsert(edquoctich.getText().toString(),edhoten.getText().toString(),edngaysinh.getText().toString(),edsdt.getText().toString(),edemail.getText().toString());
-            startActivity(new Intent(KhaiBao.this,KhaoSatbenh.class));
-            finish();
+            String quocTich, hoTen, ngaySinh, sdt, email;
+            quocTich = edquoctich.getText().toString();
+            hoTen = edhoten.getText().toString();
+            ngaySinh = edngaysinh.getText().toString();
+            sdt = edsdt.getText().toString();
+            email = edemail.getText().toString();
+            if(CheckNull.isNotNull(quocTich, hoTen, ngaySinh, sdt, email)){
+                processinsert(quocTich, hoTen, ngaySinh, sdt, email);
+                startActivity(new Intent(KhaiBao.this,KhaoSatbenh.class));
+                finish();
+            }
+            else{
+                Toast.makeText(getApplicationContext(), "Hãy nhập đầy đủ các dòng thông tin", Toast.LENGTH_SHORT).show();
+            }
         });
-
         bt.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
